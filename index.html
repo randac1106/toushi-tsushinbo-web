@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap">
 <style>
 body{margin:0}*{box-sizing:border-box}img{height:auto}@media(max-width:640px){.hero-title{font-size:clamp(29px,8vw,38px)!important;line-height:1.45!important}.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:28px!important;padding-top:48px!important}.topbar{padding-top:14px!important;padding-bottom:14px!important}.top-nav{gap:12px!important}.feature-section{padding-top:56px!important}}
-.hero-layout{min-height:0}.hero-layout>div:first-child{align-self:center}.hero-point{display:inline-flex;align-items:center;padding:9px 13px;background:#fff;border:1px solid #DCE3EF;border-radius:12px;color:#1C2A5A;font-size:14px;font-weight:700;white-space:nowrap}@media(max-width:850px){.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:30px!important}.hero-layout>div:last-child{justify-content:center!important}}@media(max-width:640px){.hero-layout{padding:38px 20px 36px!important}.hero-point{font-size:12px;padding:8px 10px}.hero-points{gap:8px!important}}a{color:#1C2A5A}a:hover{color:#B58A2B}
+.hero-layout{min-height:0}.hero-layout>div:first-child{align-self:start}.hero-point{display:inline-flex;align-items:center;padding:9px 13px;background:#fff;border:1px solid #DCE3EF;border-radius:12px;color:#1C2A5A;font-size:14px;font-weight:700;white-space:nowrap}@media(max-width:850px){.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:30px!important}.hero-layout>div:last-child{justify-content:center!important}}@media(max-width:640px){.hero-layout{padding:38px 20px 36px!important}.hero-point{font-size:12px;padding:8px 10px}.hero-points{gap:8px!important}}.hero-how{margin-top:34px;padding:23px;background:#fff;border:1px solid #DCE3EF;border-radius:20px;box-shadow:0 12px 26px rgba(28,42,90,.045)}.hero-how-label{margin:0 0 16px;color:#1C2A5A;font-size:15px;font-weight:700}.hero-how-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.hero-how-step{min-width:0;padding:12px 8px;background:#F5F7FB;border-radius:13px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px}.hero-how-number{font-size:11px;color:#B58A2B;font-weight:700;letter-spacing:.05em}.hero-how-icon{display:grid;place-items:center;width:34px;height:34px;background:#fff;border:1px solid #E4E8F0;border-radius:11px;color:#1C2A5A;font-size:22px;font-weight:700}.hero-how-step strong{font-size:13px;color:#1C2A5A;line-height:1.5}.hero-how-step small{font-size:11px;color:#5B6478;line-height:1.5}.hero-how-foot{margin:14px 0 0;font-size:12px;color:#5B6478}@media(max-width:640px){.hero-how{margin-top:26px;padding:16px}.hero-how-step{padding:10px 5px}.hero-how-step strong{font-size:12px}.hero-how-step small{font-size:10px}}a{color:#1C2A5A}a:hover{color:#B58A2B}
 </style>
 </head>
 <body>
@@ -24,7 +24,7 @@ body{margin:0}*{box-sizing:border-box}img{height:auto}@media(max-width:640px){.h
   </header>
 
   <section style="background: #F5F7FB">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 58px 24px 46px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 46px; align-items: center" class="hero-layout">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 58px 24px 46px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 46px; align-items: start" class="hero-layout">
       <div>
         <p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">入出金を除いた、本当の運用成績</p>
         <h1 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: clamp(32px,3.5vw,42px); line-height: 1.42; font-weight: 700; color: #1C2A5A; letter-spacing: 0.01em; text-wrap: balance" class="hero-title">あなたの投資、<span style="color:#B58A2B">インデックスに勝っていますか？</span></h1>
@@ -37,6 +37,15 @@ body{margin:0}*{box-sizing:border-box}img{height:auto}@media(max-width:640px){.h
         <div style="margin-top: 26px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
           <span style="background:#1C2A5A;color:#FFFFFF;font-size:15px;font-weight:700;padding:16px 28px;border-radius:999px">iPhone版 公開準備中</span>
           <span style="font-size: 13px; color: #5B6478">iPhone用 ／ 資産記録は端末内で管理</span>
+        </div>
+        <div class="hero-how" aria-label="使い方は3ステップ">
+          <p class="hero-how-label">使い方は、とてもシンプル。</p>
+          <div class="hero-how-steps">
+            <div class="hero-how-step"><span class="hero-how-number">01</span><span class="hero-how-icon" aria-hidden="true">▣</span><strong>スクショを選ぶ</strong><small>証券アプリの資産画面</small></div>
+            <div class="hero-how-step"><span class="hero-how-number">02</span><span class="hero-how-icon" aria-hidden="true">＋</span><strong>金額を記録</strong><small>複数口座もまとめて</small></div>
+            <div class="hero-how-step"><span class="hero-how-number">03</span><span class="hero-how-icon" aria-hidden="true">↗</span><strong>指数と比較</strong><small>運用の実力を見える化</small></div>
+          </div>
+          <p class="hero-how-foot">証券口座のログイン情報を預ける必要はありません。</p>
         </div>
       </div>
       <div style="display: flex; justify-content: center">
