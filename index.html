@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap">
 <style>
-body{margin:0}
+body{margin:0}*{box-sizing:border-box}img{height:auto}@media(max-width:640px){.hero-title{font-size:clamp(29px,8vw,38px)!important;line-height:1.45!important}.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:28px!important;padding-top:48px!important}.topbar{padding-top:14px!important;padding-bottom:14px!important}.top-nav{gap:12px!important}.feature-section{padding-top:56px!important}}
 a{color:#1C2A5A}a:hover{color:#B58A2B}
 </style>
 </head>
@@ -14,65 +14,51 @@ a{color:#1C2A5A}a:hover{color:#B58A2B}
 <div style="font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; color: #1A1F36; background: #FFFFFF; line-height: 1.7; font-feature-settings: 'palt' 1">
 
   <header style="position: sticky; top: 0; background: rgba(255,255,255,0.96); border-bottom: 1px solid #E6EAF2; z-index: 10">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 0 24px; min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap" class="topbar">
       <a href="#" style="text-decoration: none; font-family: 'Noto Serif JP', serif; font-size: 22px; font-weight: 700; letter-spacing: 0.06em; color: #1C2A5A; white-space: nowrap">投資の <span style="color: #B58A2B">通信簿</span></a>
-      <nav aria-label="ページ内" style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap">
+      <nav aria-label="ページ内" style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap" class="top-nav">
         <a href="#features" style="text-decoration: none; font-size: 14px; font-weight: 500">機能</a>
-        <a href="#faq" style="text-decoration: none; font-size: 14px; font-weight: 500">よくある質問</a>
-        <a href="#contact" style="text-decoration: none; font-size: 14px; font-weight: 500">お問い合わせ</a>
-        <a href="#" style="text-decoration: none; background: #1C2A5A; color: #FFFFFF; font-size: 14px; font-weight: 700; padding: 11px 18px; border-radius: 999px; white-space: nowrap">App Store で入手</a>
+        <span style="background:#E9EDF5;color:#1C2A5A;font-size:13px;font-weight:700;padding:11px 18px;border-radius:999px">iPhone版 公開準備中</span>
       </nav>
     </div>
   </header>
 
   <section style="background: #F5F7FB">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center" class="hero-layout">
       <div>
         <p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">入出金を除いた、本当の運用成績</p>
-        <h1 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 42px; line-height: 1.35; font-weight: 700; color: #1C2A5A; letter-spacing: 0.02em">あなたの投資、全部まとめて、<br>インデックスに勝っていますか？</h1>
-        <p style="margin: 24px 0 0; font-size: 17px; color: #3C4560; max-width: 36em">証券会社ごとの評価損益を眺めても、答えは出ません。投資の通信簿は、バラバラの口座を全部足して一本の線にし、インデックス一本と並べます。</p>
+        <h1 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: clamp(32px,3.5vw,42px); line-height: 1.42; font-weight: 700; color: #1C2A5A; letter-spacing: 0.01em; text-wrap: balance" class="hero-title">あなたの投資、<span style="color:#B58A2B">インデックスに勝っていますか？</span></h1>
+        <p style="margin: 24px 0 0; font-size: 17px; color: #3C4560; max-width: 36em">複数の証券口座をまとめて記録。入出金の影響を除いた運用成績を、市場指数と同じ期間で比較できます。口座連携は不要。スクショから金額を選ぶだけ。</p>
         <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
-          <a href="#" style="text-decoration: none; background: #1C2A5A; color: #FFFFFF; font-size: 16px; font-weight: 700; padding: 16px 28px; border-radius: 999px; white-space: nowrap">App Store で入手</a>
-          <span style="font-size: 13px; color: #5B6478">無料 ／ iPhone 用 ／ 記録は端末の中だけ</span>
+          <span style="background:#1C2A5A;color:#FFFFFF;font-size:15px;font-weight:700;padding:16px 28px;border-radius:999px">iPhone版 公開準備中</span>
+          <span style="font-size: 13px; color: #5B6478">iPhone用 ／ 資産記録は端末内で管理</span>
         </div>
       </div>
       <div style="display: flex; justify-content: center">
         <img src="img/home.png" alt="ホーム画面。あなたの運用成績 −5.28% と NYダウ +7.12% を同じ期間で並べ、100起点のグラフで比較している" style="width: 300px; max-width: 100%; border-radius: 36px; border: 1px solid #D8DEE9; box-shadow: 0 24px 48px rgba(28,42,90,0.14)">
       </div>
     </div>
-  </section>
+  </section>  <section id="features" class="feature-section" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 36px">
+    <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em; text-align: center">機能</p>
+    <h2 style="margin: 0 0 56px; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #1C2A5A; text-align: center">口座連携なしで、<br>かんたん記録。</h2>
 
-  <section style="max-width: 1120px; margin: 0 auto; padding: 88px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center">
-    <div style="display: flex; justify-content: center; order: 1">
-      <img src="img/history.png" alt="運用履歴画面。総運用資産の実線と元本の点線が並び、資産の増加のうち入金による分と運用による分が見分けられる" style="width: 300px; max-width: 100%; border-radius: 36px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
-    </div>
-    <div style="order: 2">
-      <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">なぜ入出金を除くのか</p>
-      <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #1C2A5A">増えたのは、入金したから？<br>それとも、運用がうまかったから？</h2>
-      <p style="margin: 20px 0 0; font-size: 16px; color: #3C4560">入金し続けていれば、資産は増えて当たり前です。だから「増えた額」を見ても、腕前は分かりません。投資の通信簿は、入金と出金の影響を計算から取り除き、運用の力だけを成績にします。</p>
-      <div style="margin-top: 28px; display: grid; gap: 14px">
-        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #1C2A5A; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">1</span><span style="font-size: 15px"><strong style="color: #1C2A5A">入金で増えても、成績は 0%。</strong>お金を足しただけでは、運用がうまくなったことにはなりません。</span></div>
-        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #1C2A5A; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">2</span><span style="font-size: 15px"><strong style="color: #1C2A5A">出金で減っても、成績は 0%。</strong>生活費に回しても、運用が下手になったことにはなりません。</span></div>
-        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #B58A2B; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">3</span><span style="font-size: 15px"><strong style="color: #1C2A5A">残るのは、運用の力だけ。</strong>それをインデックスと同じ期間で比べます。</span></div>
+    <div style="padding: 48px 0 24px">
+      <div style="max-width: 720px">
+        
+        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">スクショから、金額をかんたん登録。</h3>
+        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">証券会社の資産画面をスクショして選択。読み取った金額をタップし、複数の画像・金額も合算して記録できます。画像の読み取りは端末内で行い、口座のID・パスワードは不要です。入出金があった場合は別途記録してください。</p>
+      </div>
+      <div style="margin-top: 32px; display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap">
+        <img src="img/shot-confirm.png" alt="金額を確認画面。証券会社のスクショから読み取った金額のうち、資産合計をタップして選んでいる" style="width: 260px; max-width: 100%; border-radius: 32px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B58A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+        <img src="img/shot-done.png" alt="記録しました画面。記録日 2026/10/13、総運用資産 12,847,320 が1件記録された" style="width: 260px; max-width: 100%; border-radius: 32px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
       </div>
     </div>
-  </section>
-
-  <section style="background: #1C2A5A; color: #FFFFFF">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 64px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center">
-      <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #FFFFFF">個別株を選んだ分、<br>報われていますか？</h2>
-      <p style="margin: 0; font-size: 16px; color: #D9DFEE">インデックスを土台に、個別株も持っている。そんな人が本当に知りたいのは「個別株をやっている分は、意味があったのか」です。全部まとめた成績がインデックスを上回っていれば、選んだ分は働いている。下回っていれば、インデックスだけのほうがよかった。その答えは、口座ごとの損益をいくら眺めても出てきません。</p>
-    </div>
-  </section>
-
-  <section id="features" style="max-width: 1120px; margin: 0 auto; padding: 88px 24px 40px">
-    <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em; text-align: center">機能</p>
-    <h2 style="margin: 0 0 56px; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #1C2A5A; text-align: center">総額を入れるだけ。<br>口座はつなぎません。</h2>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center; padding: 24px 0 48px; border-bottom: 1px solid #E6EAF2">
       <div>
-        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #B58A2B">壱</p>
-        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">同じ期間で、並べて比べる</h3>
+        
+        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">あなたの成績を、指数と比較。</h3>
         <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">あなたの運用成績（TWR）と比較指数を、同じ始点から同じ終点まで。開始日を変えれば「あの日から今日まで」の勝ち負けがすぐ分かります。グラフは期間の始点を100にそろえた線です。</p>
       </div>
       <div style="display: flex; justify-content: center">
@@ -85,34 +71,48 @@ a{color:#1C2A5A}a:hover{color:#B58A2B}
         <img src="img/bench.png" alt="比較指数の一覧。NYダウ、新興国株式、NASDAQ100、全世界株式、S&P500、日経225、TOPIX、先進国株式" style="width: 260px; max-width: 100%; border-radius: 32px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
       </div>
       <div style="order: 2">
-        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #B58A2B">弐</p>
-        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">比べる相手は、自分で選ぶ</h3>
-        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">全世界株式（オルカン）、S&amp;P500、NYダウ、NASDAQ100、日経225、TOPIX、先進国株式、新興国株式。実際に買える投資信託の基準価額を毎日取り込んでいるので、「あれを買っていれば」がそのまま比較になります。</p>
+        
+        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">比較する指数は、自分で選べる。</h3>
+        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">全世界株式（オルカン）、S&amp;P500、日経225、TOPIX、NASDAQ100、FANG+など。投資信託の基準価額などを使って同じ期間の変化を比較できます。比較対象は最大3つまで選択可能です。</p>
       </div>
     </div>
 
     <div style="padding: 48px 0; border-bottom: 1px solid #E6EAF2">
       <div style="max-width: 720px">
-        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #B58A2B">参</p>
-        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">損益の中身が、ひと目で分かる</h3>
-        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">運用履歴では、総運用資産と元本の差がそのまま損益です。月初来・年初来・直近1年・全期間で切り替えて、どの期間で稼ぎ、どの期間で削られたかを振り返れます。</p>
+        
+        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">資産の推移も、ひと目で。</h3>
+        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">運用履歴では、総運用資産と元本の差がそのまま損益です。資産額と運用成績の変化を振り返り、長期の推移を確認できます。</p>
       </div>
       <div style="margin-top: 32px; overflow: hidden; border-radius: 20px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.10)">
         <img src="img/history-chart.png" alt="運用履歴のグラフ。直近1年の総運用資産と元本の推移、元本を上回る期間と下回る期間が色分けされている" style="display: block; width: 100%; height: auto">
       </div>
     </div>
 
-    <div style="padding: 48px 0 24px">
-      <div style="max-width: 720px">
-        <p style="margin: 0 0 8px; font-size: 13px; font-weight: 700; color: #B58A2B">肆</p>
-        <h3 style="margin: 0; font-size: 24px; color: #1C2A5A">記録は、スクショを撮るだけ</h3>
-        <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">証券会社のアプリで資産合計の画面をスクショして、投資の通信簿に渡すだけ。金額はその場で読み取り、タップした数字を合計して記録します。読み取りは端末の中で行い、画像は保存しません。口座連携もログイン情報も要りません。</p>
+
+  </section>
+
+
+
+  <section style="max-width: 1120px; margin: 0 auto; padding: 88px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center">
+    <div style="display: flex; justify-content: center; order: 1">
+      <img src="img/history.png" alt="運用履歴画面。総運用資産の実線と元本の点線が並び、資産の増加のうち入金による分と運用による分が見分けられる" style="width: 300px; max-width: 100%; border-radius: 36px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
+    </div>
+    <div style="order: 2">
+      <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">なぜ入出金を除くのか</p>
+      <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #1C2A5A">増えた資産と、<br>運用の実力は違う。</h2>
+      <p style="margin: 20px 0 0; font-size: 16px; color: #3C4560">入金で資産が増えても、それだけでは運用が成功したとは言えません。投資の通信簿は入出金の影響を除いた運用成績（TWR）を計算し、指数との比較に使います。</p>
+      <div style="margin-top: 28px; display: grid; gap: 14px">
+        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #1C2A5A; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">1</span><span style="font-size: 15px"><strong style="color: #1C2A5A">入金しただけでは、成績は上がらない。</strong>運用損益と入金額を分けて考えます。</span></div>
+        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #1C2A5A; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">2</span><span style="font-size: 15px"><strong style="color: #1C2A5A">出金しただけでは、成績は下がらない。</strong>引き出した金額を運用損失とは扱いません。</span></div>
+        <div style="display: flex; gap: 14px; align-items: baseline"><span style="flex: none; width: 28px; height: 28px; border-radius: 50%; background: #B58A2B; color: #FFFFFF; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transform: translateY(4px)">3</span><span style="font-size: 15px"><strong style="color: #1C2A5A">残るのは、運用の力だけ。</strong>それをインデックスと同じ期間で比べます。</span></div>
       </div>
-      <div style="margin-top: 32px; display: flex; justify-content: center; align-items: center; gap: 28px; flex-wrap: wrap">
-        <img src="img/shot-confirm.png" alt="金額を確認画面。証券会社のスクショから読み取った金額のうち、資産合計をタップして選んでいる" style="width: 260px; max-width: 100%; border-radius: 32px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#B58A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-        <img src="img/shot-done.png" alt="記録しました画面。記録日 2026/10/13、総運用資産 12,847,320 が1件記録された" style="width: 260px; max-width: 100%; border-radius: 32px; border: 1px solid #D8DEE9; box-shadow: 0 16px 36px rgba(28,42,90,0.12)">
-      </div>
+    </div>
+  </section>
+
+  <section style="background: #1C2A5A; color: #FFFFFF">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 64px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center">
+      <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #FFFFFF">個別株を選んだ分、<br>報われていますか？</h2>
+      <p style="margin: 0; font-size: 16px; color: #D9DFEE">インデックス投資に加えて個別株も持っているなら、ポートフォリオ全体の成績を指数と比べてみませんか。指数との差を知ることは、これまでの投資判断を振り返る手がかりになります。※個別株だけの寄与を算出する機能ではありません。</p>
     </div>
   </section>
 
@@ -120,24 +120,24 @@ a{color:#1C2A5A}a:hover{color:#B58A2B}
     <div style="max-width: 760px; margin: 0 auto; padding: 72px 24px; text-align: center">
       <p style="margin: 0 0 12px; font-size: 14px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">安心</p>
       <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 32px; line-height: 1.4; color: #1C2A5A">記録は、この iPhone の中にしかありません。</h2>
-      <p style="margin: 20px 0 0; font-size: 16px; color: #3C4560">資産額も入出金も、サーバーには送りません。開発者にも見えません。アプリがインターネットにつなぐのは、比較指数の値を受け取るときだけです。機種変更のときは、バックアップ機能でファイルに書き出して、新しい端末で復元してください。</p>
+      <p style="margin: 20px 0 0; font-size: 16px; color: #3C4560">資産額も入出金も、サーバーには送りません。開発者にも見えません。比較指数の取得にはインターネットを利用します。機種変更のときは、バックアップ機能でファイルに書き出して、新しい端末で復元してください。</p>
     </div>
   </section>
 
   <section style="max-width: 1120px; margin: 0 auto; padding: 56px 24px 72px; text-align: center">
     <h2 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: 28px; line-height: 1.4; color: #1C2A5A">まずは、今日の総額をひとつ。</h2>
-    <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">月に一度の記録で十分です。通信簿は、記録を重ねるほど正直になります。</p>
-    <div style="margin-top: 28px"><a href="#" style="text-decoration: none; background: #1C2A5A; color: #FFFFFF; font-size: 16px; font-weight: 700; padding: 16px 28px; border-radius: 999px; display: inline-block">App Store で入手</a></div>
+    <p style="margin: 14px 0 0; font-size: 15px; color: #3C4560">まずは資産額を記録。入出金があった日は、その金額も記録すると運用成績をより正確に比較できます。</p>
+    <div style="margin-top: 28px"><span style="background:#1C2A5A;color:#FFFFFF;font-size:15px;font-weight:700;padding:16px 28px;border-radius:999px;display:inline-block">iPhone版 公開準備中</span></div>
   </section>
 
   <footer style="background: #1A1F36; color: #B8BFD1">
     <div style="max-width: 1120px; margin: 0 auto; padding: 40px 24px 32px">
       <nav aria-label="フッター" style="display: flex; gap: 24px; flex-wrap: wrap; font-size: 13px">
-        <a href="#faq" style="color: #FFFFFF; text-decoration: none">よくある質問</a>
-        <a href="#" style="color: #FFFFFF; text-decoration: none">プライバシーポリシー</a>
-        <a href="#" style="color: #FFFFFF; text-decoration: none">利用規約</a>
-        <a href="#contact" style="color: #FFFFFF; text-decoration: none">お問い合わせ</a>
-        <a href="#" style="color: #FFFFFF; text-decoration: none">お知らせ</a>
+        <span>よくある質問：公開準備中</span>
+        <span>プライバシーポリシー：公開準備中</span>
+        <span>利用規約：公開準備中</span>
+        <span>お問い合わせ：公開準備中</span>
+        
       </nav>
       <p style="margin: 24px 0 0; font-size: 12px; line-height: 1.8">本アプリは投資助言・勧誘を行うものではありません。表示される数値は利用者の入力と公開データをもとに計算したもので、正確性・完全性を保証するものではありません。投資の判断はご自身の責任で行ってください。比較指数の値は三菱UFJアセットマネジメント等が公表する投資信託の基準価額をもとにしています。</p>
       <p style="margin: 16px 0 0; font-size: 12px">運営：株式会社ランダック　© 2026 Randac Inc.</p>
