@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap">
 <style>
 body{margin:0}*{box-sizing:border-box}img{height:auto}@media(max-width:640px){.hero-title{font-size:clamp(29px,8vw,38px)!important;line-height:1.45!important}.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:28px!important;padding-top:48px!important}.topbar{padding-top:14px!important;padding-bottom:14px!important}.top-nav{gap:12px!important}.feature-section{padding-top:56px!important}}
-a{color:#1C2A5A}a:hover{color:#B58A2B}
+.hero-point{display:inline-flex;align-items:center;padding:9px 13px;background:#fff;border:1px solid #DCE3EF;border-radius:12px;color:#1C2A5A;font-size:14px;font-weight:700;white-space:nowrap}@media(max-width:850px){.hero-layout{grid-template-columns:minmax(0,1fr)!important;gap:30px!important}.hero-layout>div:last-child{justify-content:center!important}}@media(max-width:640px){.hero-layout{padding:38px 20px 36px!important}.hero-point{font-size:12px;padding:8px 10px}.hero-points{gap:8px!important}}a{color:#1C2A5A}a:hover{color:#B58A2B}
 </style>
 </head>
 <body>
@@ -24,18 +24,23 @@ a{color:#1C2A5A}a:hover{color:#B58A2B}
   </header>
 
   <section style="background: #F5F7FB">
-    <div style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center" class="hero-layout">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 58px 24px 46px; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr); gap: 46px; align-items: start" class="hero-layout">
       <div>
         <p style="margin: 0 0 14px; font-size: 15px; font-weight: 700; color: #B58A2B; letter-spacing: 0.08em">入出金を除いた、本当の運用成績</p>
         <h1 style="margin: 0; font-family: 'Noto Serif JP', serif; font-size: clamp(32px,3.5vw,42px); line-height: 1.42; font-weight: 700; color: #1C2A5A; letter-spacing: 0.01em; text-wrap: balance" class="hero-title">あなたの投資、<span style="color:#B58A2B">インデックスに勝っていますか？</span></h1>
-        <p style="margin: 24px 0 0; font-size: 17px; color: #3C4560; max-width: 36em">複数の証券口座をまとめて記録。入出金の影響を除いた運用成績を、市場指数と同じ期間で比較できます。口座連携は不要。スクショから金額を選ぶだけ。</p>
-        <div style="margin-top: 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+        <p style="margin: 20px 0 0; font-size: 16px; color: #3C4560; max-width: 36em">複数の証券口座をまとめて記録。入出金の影響を除いた運用成績を、市場指数と同じ期間で比較できます。口座連携は不要。スクショから金額を選ぶだけ。</p>
+        <div class="hero-points" aria-label="3つの特長" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:26px">
+          <span class="hero-point">スクショで簡単記録</span>
+          <span class="hero-point">口座連携不要</span>
+          <span class="hero-point">最大3指数と比較</span>
+        </div>
+        <div style="margin-top: 26px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
           <span style="background:#1C2A5A;color:#FFFFFF;font-size:15px;font-weight:700;padding:16px 28px;border-radius:999px">iPhone版 公開準備中</span>
           <span style="font-size: 13px; color: #5B6478">iPhone用 ／ 資産記録は端末内で管理</span>
         </div>
       </div>
       <div style="display: flex; justify-content: center">
-        <img src="img/home.png" alt="ホーム画面。あなたの運用成績 −5.28% と NYダウ +7.12% を同じ期間で並べ、100起点のグラフで比較している" style="width: 300px; max-width: 100%; border-radius: 36px; border: 1px solid #D8DEE9; box-shadow: 0 24px 48px rgba(28,42,90,0.14)">
+        <img src="img/home.png" alt="ホーム画面。あなたの運用成績 −5.28% と NYダウ +7.12% を同じ期間で並べ、100起点のグラフで比較している" style="width: 330px; max-width: 100%; border-radius: 36px; border: 1px solid #D8DEE9; box-shadow: 0 24px 48px rgba(28,42,90,0.14)">
       </div>
     </div>
   </section>  <section id="features" class="feature-section" style="max-width: 1120px; margin: 0 auto; padding: 72px 24px 36px">
